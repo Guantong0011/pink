@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="moment.css">
+    <script src="../long/js/jquery-3.2.1.min.js"></script>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        #wrap {
+            width: 100%;
+            height: 100%;
+            background-image: url("img/bgImg.png");
+            background-repeat: repeat-y;
+            position: relative;
+        }
+
+        #head {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100px;
+            background-color:white;
+            opacity: 0.9;
+            overflow: hidden;
+
+        }
+
+        #logo {
+            width: 37px;
+            height: 80px;
+            float: left;
+            margin-left: 75px;
+            margin-top: 28px;
+        }
+        .navs{
+            float: left;
+            border: 1px;
+            width: 85px;
+            height: 100px;
+            display: block;
+            text-align: center;
+            line-height: 100px;
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            font-size: 16px;
+
+
+        }
+       #fa
+        {
+            margin-left: 100px;
+        }
+
+       #head a:hover{
+           background-color: ghostwhite;
+
+        }
+
+        #bibi {
+            width: 40px;
+            height: 40px;
+            float: left;
+            margin-top:25px;
+            margin-left: 330px;
+        }
+        #bibi img{
+            width: 100%;
+            height: 100%;
+        }
+
+        #user {
+            float: left;
+            width: 110px;
+            height: 40px;
+            border-radius: 20px;
+            border: 1px solid #5CAE6D;
+            text-align: center;
+            line-height: 40px;
+            display: inline-block;
+            margin-top: 25px;
+            margin-left: 15px;
+            font-size: 14px;
+            color: #5CAE6D;
+
+        }
+        #user a {
+            color: #5CAE6D;
+            background-color:white ;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+
+
+        .footdiv{
+            float: left;
+            width: 83px;
+            border: 1px solid black;
+            margin-top: 98px;
+        }
+        #fa1
+        {
+            margin-left: -425px;
+        }
+        #fa2
+        {
+            margin-left: -340px;
+            display: none;
+        }
+        #fa3
+        {
+            margin-left: -255px;
+            display: none;
+        }
+
+        #fa4
+        {
+            margin-left: -170px;
+            display: none;
+        }
+        #fa5
+        {
+            margin-left: -85px;
+            display: none;
+        }
+
+        #title {
+            width: 960px;
+            height: 480px;
+            margin: 0 auto;
+            border: 1px solid black;
+            margin-top: 140px;
+            overflow: hidden;
+        }
+        #title div{
+            float: left;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #title div:nth-child(1)
+        {
+            width: 480px;
+            height: 480px;
+        }
+        #title div:nth-child(2)
+        {
+            width: 240px;
+            height: 240px;
+        }
+        #title div:nth-child(3)
+        {
+            width: 240px;
+            height: 240px;
+        }
+        #title div:nth-child(4)
+        {
+            width: 240px;
+            height: 240px;
+        }
+        #title div:nth-child(5)
+        {
+            width: 240px;
+            height: 240px;
+        }
+        #title img:hover
+        {
+            transform: scale(1.2);
+            transition: all .5s;
+        }
+
+        .imghover {
+            width: 100%;
+            height: 20%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: black;
+            opacity: 0.7;
+
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="head">
+
+        <div id="logo">
+            <img src="imgs/head-logo.png" height="37" width="80"/>
+    </div>
+    <div>
+        <a href="#" class="navs" id="fa">首页</a>
+        <a href="#" class="navs">阅读</a>
+        <a href="#" class="navs">电台</a>
+        <a href="#" class="navs">碎片</a>
+        <a href="#" class="navs">客户端</a>
+        <div class="footdiv" id="fa1"></div>
+        <div class="footdiv" id="fa2"></div>
+        <div class="footdiv" id="fa3"></div>
+        <div class="footdiv" id="fa4"></div>
+        <div class="footdiv" id="fa5"></div>
+    </div>
+
+        <div id="bibi">
+            <img src="imgs/bibi.jpg" height="78" width="78"/>
+        </div>
+        <div id="user">
+            <a href="#">登录</a>/<a href="#">注册</a>
+        </div>
+
+
+    </div>
+    <div id="title">
+        <div>
+            <img src="imgs/10ec7bfffb06c90f7d36421df5afaebf20170321.jpg" height="480" width="480"/>
+        <div class="imghover">
+
+        </div>
+        </div>
+        <div><img src="imgs/4b9cabfe7bdaef3757ce818f1617776020170509.jpg" height="240" width="240"/></div>
+        <div><img src="imgs/b7ba659ac441c3996e12be395ba61bcb20170501.jpg" height="240" width="240"/></div>
+        <div><img src="imgs/d261c1e53975eca13bb0f6ac83f62a4a20170225.jpg" height="240" width="240"/></div>
+        <div><img src="imgs/fdb9e3529e71d35abc1b574005b1e35a20170508.jpg" height="240" width="240"/></div>
+    </div>
+
+</div>
+
+</body>
+<script>
+    $("#user").hover(function () {
+        $("#user a").css("color","white");
+        $("#user").css("backgroundColor","#5CAE6D");
+        $("#user").css("color","white");
+        $("#user a").css("backgroundColor","#5CAE6D");
+        $("#user a").css("transition","1s");
+        $("#user").css("transition","1s");
+    },function () {
+        $("#user").css("backgroundColor","white");
+        $("#user a").css("color","#5CAE6D");
+        $("#user").css("color","#5CAE6D");
+        $("#user a").css("backgroundColor","white");
+        $("#user a").css("transition","1s");
+        $("#user").css("transition","1s");
+    });
+    $("")
+
+
+</script>
+</html>
